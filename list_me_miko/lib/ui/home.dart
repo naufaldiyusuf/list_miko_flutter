@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         player.resume();
         break;
       case AppLifecycleState.inactive:
-        player.pause();
+        player.stop();
       // widget is inactive
         break;
       case AppLifecycleState.paused:
