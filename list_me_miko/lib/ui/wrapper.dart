@@ -11,6 +11,10 @@ class Wrapper extends StatelessWidget {
             return ListActivityPage();
           } else if (state is OnInputPage) {
             return InputActivityPage();
+          } else if (state is OnBackgroundTypeChangePage) {
+            return BackgroundTypeChangePage(state.fromPage);
+          } else if (state is OnBackgroundImageChangePage) {
+            return BackgroundImageChangePage(state.backToPage, state.backgroundType, state.imageDefault, state.imageSelected);
           } else {
             return SplashScreenPage();
           }

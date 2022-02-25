@@ -29,5 +29,9 @@ import 'package:share/share.dart';
 part 'wrapper.dart';
 part 'home.dart';
 part 'splash_screen.dart';
-part 'input.dart';
-part 'list.dart';
+
+part 'activity/input.dart';
+part 'activity/list.dart';
+
+part 'setting/background/background_type_change.dart';
+part 'setting/background/background_image_change.dart';

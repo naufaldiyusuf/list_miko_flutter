@@ -12,3 +12,16 @@ class GoToHomePage extends PageEvent {}
 class GoToInputPage extends PageEvent {}
 
 class GoToListPage extends PageEvent {}
+
+class GoToBackgroundTypeChangePage extends PageEvent {
+  final String fromPage;
+
+  GoToBackgroundTypeChangePage(this.fromPage);
+}
+
+class GoToBackgroundImageChangePage extends PageEvent {
+  final String backToPage;
+  final String backgroundType;
+
+  GoToBackgroundImageChangePage(this.backToPage, this.backgroundType);
+}

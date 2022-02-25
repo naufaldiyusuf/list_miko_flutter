@@ -14,3 +14,18 @@ class OnHomePage extends PageState {}
 class OnInputPage extends PageState {}
 
 class OnListPage extends PageState {}
+
+class OnBackgroundTypeChangePage extends PageState {
+  final String fromPage;
+
+  OnBackgroundTypeChangePage(this.fromPage);
+}
+
+class OnBackgroundImageChangePage extends PageState {
+  final String backToPage;
+  final String backgroundType;
+  final String imageDefault;
+  final String? imageSelected;
+
+  OnBackgroundImageChangePage(this.backToPage, this.backgroundType, this.imageDefault, this.imageSelected);
+}
